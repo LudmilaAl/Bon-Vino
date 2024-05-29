@@ -1,5 +1,7 @@
 package Entity;
 
+import java.util.List;
+
 public class RegionVitivinicola {
     private String descripcion;
     private String nombre;
@@ -20,7 +22,15 @@ public class RegionVitivinicola {
         this.nombre = nombre;
     }
 
-    public String obtenerNombrePais(){
-        return "nombre";
+    public String obtenerNombrePais(List<Pais> paises){
+        for (Pais pais: paises) {
+            for (Provincia provincia: pais.getProvincias()) {
+                for (RegionVitivinicola region: provincia.getRegionVitivinicolas()) {
+                    if (region.getNombre().equals(this.nombre))
+                            return pais.getNombre();
+                }
+            }
+        }
+        return "País no encontrado.";
     }
 }

@@ -1,5 +1,6 @@
 package Entity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Vino {
@@ -10,7 +11,7 @@ public class Vino {
     private double precio;
     private List<Varietal> varietal;
     private Bodega bodega;
-    private List<Resena> resena;
+    private List<Resena> resenas;
 
     public Integer getAnada() {
         return anada;
@@ -68,37 +69,42 @@ public class Vino {
         this.bodega = bodega;
     }
 
-    public List<Resena> getResena() {
-        return resena;
+    public List<Resena> getResenas() {
+        return resenas;
     }
 
-    public void setResena(List<Resena> resena) {
-        this.resena = resena;
+    public void setResenas(List<Resena> resenas) {
+        this.resenas = resenas;
     }
 
     public boolean tieneResena(){
-
-        return false;
+        return !this.resenas.isEmpty();
     }
 
     public double calcularPromedioCalif(){
-
-        return 0.0;
+        double total = 0;
+        for (Resena resena : this.resenas) {
+            total += resena.getPuntaje();
+        }
+        if (!this.resenas.isEmpty())
+            return total / this.resenas.size();
+        return 0;
     }
 
     public String obtenerNombreBodega(){
-
-        return "nombre";
+        return this.bodega.getNombre();
     }
 
-    public String obtenerDescripcionVarietal(){
-
-        return "descripcion";
+    public List<String> obtenerDescripcionVarietal(){
+        List<String> descripcionVarietal = new ArrayList<>();
+        for (Varietal var : this.varietal) {
+            descripcionVarietal.add(var.getDescripcion());
+        }
+        return descripcionVarietal;
     }
 
-    public String obtenerUbicacion(){
-
-        return "ubicacion";
+    public String obtenerUbicacion(List<Pais> paises){
+        return this.bodega.obtenerNombrePais(paises);
     }
 
 }

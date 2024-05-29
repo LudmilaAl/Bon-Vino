@@ -6,6 +6,7 @@ public class Resena {
     private String comentario;
     private boolean esPremium;
     private LocalDate fechaReserva;
+    private Double puntaje;
 
 
     public String getComentario() {
@@ -24,6 +25,14 @@ public class Resena {
         this.esPremium = esPremium;
     }
 
+    public Double getPuntaje() {
+        return puntaje;
+    }
+
+    public void setPuntaje(Double puntaje) {
+        this.puntaje = puntaje;
+    }
+
     public LocalDate getFechaReserva() {
         return fechaReserva;
     }
@@ -33,14 +42,11 @@ public class Resena {
     }
 
     public boolean esPremium(){
-        if(esPremium)
-            return true;
-        else
-            return false;
+        return this.esPremium;
+
     }
 
     public boolean esDePeriodo(LocalDate fechaDesde, LocalDate fechaHasta){
-
-        return true;
+        return (this.fechaReserva.isAfter(fechaDesde) && this.fechaReserva.isBefore(fechaHasta));
     }
 }

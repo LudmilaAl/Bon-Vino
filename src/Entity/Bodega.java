@@ -1,6 +1,7 @@
 package Entity;
 
 import java.time.LocalDate;
+import java.util.List;
 
 public class Bodega {
     private String coordenadasUbicacion;
@@ -8,6 +9,7 @@ public class Bodega {
     private String historia;
     private  String nombre;
     private LocalDate periodoActualizacion;
+    private RegionVitivinicola regionVitivinicola;
 
     public String getCoordenadasUbicacion() {
         return coordenadasUbicacion;
@@ -49,12 +51,20 @@ public class Bodega {
         this.periodoActualizacion = periodoActualizacion;
     }
 
-    public String obtenerNombreRegionVitivinicola(){
-
-        return "String";
+    public RegionVitivinicola getRegionVitivinicola() {
+        return regionVitivinicola;
     }
 
-    public String obtenerNombrePais(){
-        return "String";
+    public void setRegionVitivinicola(RegionVitivinicola regionVitivinicola) {
+        this.regionVitivinicola = regionVitivinicola;
+    }
+
+    public String obtenerNombreRegionVitivinicola(){
+
+        return this.regionVitivinicola.getNombre();
+    }
+
+    public String obtenerNombrePais(List<Pais> paises){
+        return this.regionVitivinicola.obtenerNombrePais(paises);
     }
 }
