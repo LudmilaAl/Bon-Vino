@@ -1,0 +1,65 @@
+[
+  {
+    "nombre": "Argentina",
+    "provincias": [
+      {
+        "nombre": "Córdoba",
+        "regionVitivinicolas": [
+          {
+            "nombre": "regionI",
+            "descripcion": "descrip regionI"
+          },
+          {
+            "nombre": "regionC",
+            "descripcion": "descrip regionC"
+          }
+        ]
+      },
+      {
+        "nombre": "Mendoza",
+        "regionVitivinicolas": [
+          {
+            "nombre": "regionA",
+            "descripcion": "descrip regionA"
+          },
+          {
+            "nombre": "regionD",
+            "descripcion": "descrip regionD"
+          }
+        ]
+      }
+    ]
+  },
+  {
+
+    "nombre": "Uruguay",
+    "provincias": [
+      {
+        "nombre": "Salto",
+        "regionVitivinicolas": [
+          {
+            "nombre": "regionF",
+            "descripcion": "descrip regionF"
+          },
+          {
+            "nombre": "regionG",
+            "descripcion": "descrip regionG"
+          }
+        ]
+      },
+      {
+        "nombre": "Florida",
+        "regionVitivinicolas": [
+          {
+            "nombre": "regionB",
+            "descripcion": "descrip regionB"
+          },
+          {
+            "nombre": "regionH",
+            "descripcion": "descrip regionH"
+          }
+        ]
+      }
+    ]
+  }
+]

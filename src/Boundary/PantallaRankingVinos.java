@@ -1,6 +1,7 @@
 package Boundary;
 
 import Control.GestorRankingVinos;
+import Entity.Pais;
 import Entity.Vino;
 
 import java.time.LocalDate;
@@ -175,9 +176,9 @@ public class PantallaRankingVinos {
     public void solicitarConfPGReporte() {
         //Va con la pantalla
     }
-    public void tomarConfPGReporte(boolean confirmacionReporte, GestorRankingVinos gestor, List<Vino> vinos) {
+    public void tomarConfPGReporte(boolean confirmacionReporte, GestorRankingVinos gestor, List<Vino> vinos, List<Pais> listaPaises) {
         setConfirmacionGeneracionReporte(confirmacionReporte);
-        gestor.tomarConfPGReporte(confirmacionReporte, vinos);
+        gestor.tomarConfPGReporte(confirmacionReporte, vinos, listaPaises);
     }
     public void informarGeneracionExitosa() {
         //Va con la pantalla

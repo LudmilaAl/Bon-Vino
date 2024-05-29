@@ -1,7 +1,7 @@
 package Control;
 
 import Boundary.PantallaRankingVinos;
-import DTO.DTOReporte;
+import Entity.Pais;
 import Entity.Vino;
 
 import java.time.LocalDate;
@@ -16,7 +16,7 @@ public class GestorRankingVinos {
     private String tipoVisualizacionReporteSeleccionado;
     private Boolean confirmacionReporte;
     private List<Vino> listaVinosConSommelier;
-    private List<DTOReporte> listaTopDiezVinos;
+    private String[][] listaTopDiezVinos;
 
     //GETTER AND SETTER
     public LocalDate getFechaDesde() {
@@ -68,11 +68,11 @@ public class GestorRankingVinos {
         this.listaVinosConSommelier = listaVinosConSommelier;
     }
 
-    public List<DTOReporte> getListaTopDiezVinos() {
+    public String[][] getListaTopDiezVinos() {
         return listaTopDiezVinos;
     }
 
-    public void setListaTopDiezVinos(List<DTOReporte> listaTopDiezVinos) {
+    public void setListaTopDiezVinos(String[][] listaTopDiezVinos) {
         this.listaTopDiezVinos = listaTopDiezVinos;
     }
 
@@ -97,11 +97,18 @@ public class GestorRankingVinos {
         setTipoVisualizacionReporteSeleccionado(formaVisualizacion);
         pantalla.solicitarConfPGReporte();
     }
-    public void tomarConfPGReporte(boolean confirmacion, List<Vino> vinos) {
+    public void tomarConfPGReporte(boolean confirmacion, List<Vino> vinos, List<Pais> listaPaises) {
         setConfirmacionReporte(confirmacion);
-        buscarVinosConResenasSommeliers(vinos);
+        if(tipoResenaSeleccionada.equals("Reseñas de Sommelier")){
+            buscarVinosConResenasSommeliers(vinos, listaPaises);
+        } else if(tipoResenaSeleccionada.equals("Reseñas normales")){
+            //Fuera del CU
+        } else if(tipoResenaSeleccionada.equals("Reseñas de Amigos")){
+            //Fuera del CU
+        }
+
     }
-    public void buscarVinosConResenasSommeliers(List<Vino> vinos) {
+    public void buscarVinosConResenasSommeliers(List<Vino> vinos, List<Pais> listaPaises) {
 
         listaVinosConSommelier = new ArrayList<>();
 
@@ -115,31 +122,38 @@ public class GestorRankingVinos {
             vino.calcularPromedioCalif(fechaDesde,fechaHasta);
         });
 
-        ordenarVinosSegunCalificación();
+        ordenarVinosSegunCalificación(listaPaises);
     }
-    public void ordenarVinosSegunCalificación() {
+    public void ordenarVinosSegunCalificación(List<Pais> listaPaises) {
         listaVinosConSommelier.sort(Comparator.comparing(Vino::getPromedioCalificacion).reversed());
-        obtenerDatosTop10();
+        obtenerDatosTop10(listaPaises);
     }
 
-    public void obtenerDatosTop10(){ //ESTE METODO NO ESTÁ EN EL DIAGRAMA DE SECUENCIA, SE LLAMA ARRIBA
+    public void obtenerDatosTop10(List<Pais> listaPaises){ //ESTE METODO NO ESTÁ EN EL DIAGRAMA DE SECUENCIA, SE LLAMA ARRIBA
 
-        listaTopDiezVinos = new ArrayList<>();
 
-        for(int i = 0; i < 10; i++){
+
+        int cantidadVinos = listaVinosConSommelier.size() > 10 ? 10 : listaVinosConSommelier.size();
+
+        if(cantidadVinos > 0){
+            listaTopDiezVinos = new String[cantidadVinos][7];
+        }
+
+        for(int i = 0; i < cantidadVinos; i++){
             Vino vino = listaVinosConSommelier.get(i);
 
-            DTOReporte datosVino = new DTOReporte();
-
-            datosVino.setNombreVino(vino.getNombre());
-            datosVino.setPrecioVino(vino.getPrecio());
-            datosVino.setCalificacionVino(vino.getPromedioCalificacion());
-            datosVino.setCalificacionGeneral(i+1);
-            datosVino.setNombreBodega(vino.obtenerNombreBodega());
-            datosVino.setVarietal(vino.obtenerDescripcionVarietal());
-            datosVino.setNombreRegion(vino.obtenerNombreRegionVitinicola());
-            //datosVino.setNombrePais(vino.obtenerUbicacion()); FALTA TRAER LOS PAISES
-
+            listaTopDiezVinos[i][0]=vino.getNombre();
+            listaTopDiezVinos[i][1]=String.valueOf(vino.getPrecio());
+            listaTopDiezVinos[i][2]=String.valueOf(vino.getPromedioCalificacion());
+            listaTopDiezVinos[i][3]=vino.obtenerNombreBodega();
+            listaTopDiezVinos[i][4]=vino.obtenerDescripcionVarietal();
+            listaTopDiezVinos[i][5]=vino.obtenerNombreRegionVitinicola();
+            listaTopDiezVinos[i][6]=vino.obtenerUbicacion(listaPaises);
+        }
+        for (int i = 0; i < cantidadVinos; i++) {
+            for (int j = 0; j < 7; j++) {
+                System.out.println(listaTopDiezVinos[i][j] + " ");
+            }
         }
 
     }

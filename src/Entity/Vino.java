@@ -96,6 +96,10 @@ public class Vino {
 
     //CONSTRUCTOR
 
+
+    public Vino() {
+    }
+
     public Vino(Integer anada, String imagenEtiqueta, String nombre, String notaDeCadaBodega, double precio,
                 List<Varietal> varietal, Bodega bodega, List<Resena> resenas) {
         this.anada = anada;

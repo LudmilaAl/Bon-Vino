@@ -1,0 +1,110 @@
+[
+  {
+    "anada": 2010,
+    "imagenEtiqueta": "Etiqueta1",
+    "nombre": "Vino1",
+    "notaDeCadaBodega": "nota1",
+    "precio": 1500.50,
+    "varietal": [
+      {
+        "descripcion": "uvaA",
+        "porcentajeComposicion": 0.50
+      },
+      {
+        "descripcion": "uvaB",
+        "porcentajeComposicion": 0.50
+      }
+    ],
+    "bodega": {
+      "coordenadasUbicacion": "100, 500",
+      "descripcion": "descrip bodega1",
+      "historia": "historia1",
+      "nombre": "bodega1",
+      "periodoActualizacion": "2024-07-01",
+      "regionVitivinicola": {
+        "nombre": "regionA",
+        "descripcion": "descrip regionA"
+      }
+    },
+    "resenas": [
+      {
+        "comentario":  "comentario1A",
+        "esPremium": true,
+        "fechaReserva": "2024-07-01",
+        "puntaje": 7
+      },
+      {
+        "comentario":  "comentario1B",
+        "esPremium": false,
+        "fechaReserva": "2023-07-01",
+        "puntaje": 9
+      },
+      {
+        "comentario":  "comentario1C",
+        "esPremium": true,
+        "fechaReserva": "2023-10-01",
+        "puntaje": 8
+      },
+      {
+        "comentario":  "comentario1D",
+        "esPremium": false,
+        "fechaReserva": "2024-07-01",
+        "puntaje": 6
+      }
+    ]
+  },
+  {
+    "anada": 2015,
+    "imagenEtiqueta": "Etiqueta2",
+    "nombre": "Vino2",
+    "notaDeCadaBodega": "nota2",
+    "precio": 1900,
+    "varietal": [
+      {
+        "descripcion": "uvaA",
+        "porcentajeComposicion": 0.70
+      },
+      {
+        "descripcion": "uvaB",
+        "porcentajeComposicion": 0.30
+      }
+    ],
+    "bodega": {
+      "coordenadasUbicacion": "300, 500",
+      "descripcion": "descrip bodega2",
+      "historia": "historia2",
+      "nombre": "bodega2",
+      "periodoActualizacion": "2023-05-01",
+      "regionVitivinicola": {
+        "nombre": "regionB",
+        "descripcion": "descrip regionB"
+      }
+    },
+    "resenas": [
+      {
+        "comentario":  "comentario2A",
+        "esPremium": false,
+        "fechaReserva": "2023-03-01",
+        "puntaje": 5
+      },
+      {
+        "comentario":  "comentario2B",
+        "esPremium": true,
+        "fechaReserva": "2023-02-01",
+        "puntaje": 6
+      },
+      {
+        "comentario":  "comentario2C",
+        "esPremium": false,
+        "fechaReserva": "2023-10-01",
+        "puntaje": 7
+      },
+      {
+        "comentario":  "comentario2D",
+        "esPremium": false,
+        "fechaReserva": "2024-07-01",
+        "puntaje": 6
+      }
+    ]
+  }
+]

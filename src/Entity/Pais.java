@@ -3,8 +3,12 @@ package Entity;
 import java.util.List;
 
 public class Pais {
+
+    //ATRIBUTOS
     private String nombre;
     private List<Provincia> provincias;
+
+    //GETTER AND SETTERS
 
     public String getNombre() {
         return nombre;
@@ -20,5 +24,10 @@ public class Pais {
 
     public void setProvincias(List<Provincia> provincias) {
         this.provincias = provincias;
+    }
+
+    //CONSTRUCTOR
+
+    public Pais() {
     }
 }
