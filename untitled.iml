@@ -11,5 +11,23 @@
     <orderEntry type="library" name="jackson-core-2.17.0" level="project" />
     <orderEntry type="library" name="jackson-databind-2.17.0" level="project" />
     <orderEntry type="library" name="jackson-datatype-jsr310-2.17.0" level="project" />
+    <orderEntry type="library" name="poi-4.1.2" level="project" />
+    <orderEntry type="library" name="poi-ooxml-3.10-beta1" level="project" />
+    <orderEntry type="library" name="poi-ooxml-schemas-3.10-FINAL" level="project" />
+    <orderEntry type="library" name="xbean-2.2.0" level="project" />
+    <orderEntry type="library" name="dom4j-2.1.1" level="project" />
+    <orderEntry type="library" name="poi-ooxml-4.1.2" level="project" />
+    <orderEntry type="library" name="commons-collections4-4.4" level="project" />
+    <orderEntry type="library" name="commons-compress-1.21" level="project" />
+    <orderEntry type="library" name="poi-5.2.3" level="project" />
+    <orderEntry type="library" name="poi-ooxml-full-5.2.3" level="project" />
+    <orderEntry type="library" name="poi-ooxml-5.2.3" level="project" />
+    <orderEntry type="library" name="commons-collections4-4.4 (2)" level="project" />
+    <orderEntry type="library" name="commons-io-2.11.0" level="project" />
+    <orderEntry type="library" name="xmlbeans-5.1.1" level="project" />
+    <orderEntry type="library" name="log4j-api-2.18.0" level="project" />
+    <orderEntry type="library" name="log4j-core-2.23.1" level="project" />
+    <orderEntry type="library" name="xmlbeans-5.1.1 (2)" level="project" />
+    <orderEntry type="library" name="jxl" level="project" />
   </component>
 </module>

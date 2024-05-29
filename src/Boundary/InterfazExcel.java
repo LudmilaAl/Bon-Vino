@@ -2,6 +2,6 @@ package Boundary;
 
 public class InterfazExcel {
     public void exportarExcel() {
-        //VER!! QUE SE HACE CON EL EXCEL??
+        System.out.println("Se guadró el archivo en C:\\Users\\Usuario");
     }
 }

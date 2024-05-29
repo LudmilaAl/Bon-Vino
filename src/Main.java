@@ -1,3 +1,4 @@
+import Boundary.InterfazExcel;
 import Boundary.PantallaRankingVinos;
 import Control.GestorRankingVinos;
 import Entity.Pais;
@@ -12,6 +13,7 @@ import java.util.List;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+import jxl.write.WriteException;
 
 public class Main {
     public static void main(String[] args) {
@@ -31,6 +33,9 @@ public class Main {
             GestorRankingVinos gestorRankingVinos = new GestorRankingVinos();
 
             PantallaRankingVinos pantallaRankingVinos = new PantallaRankingVinos();
+
+            InterfazExcel interfazExcel = new InterfazExcel();
+
 
 
 
@@ -62,10 +67,12 @@ public class Main {
 
             Boolean confirmacionGeneracion = true;
 
-            pantallaRankingVinos.tomarConfPGReporte(confirmacionGeneracion, gestorRankingVinos, listaVinos, listapaises);
+            pantallaRankingVinos.tomarConfPGReporte(confirmacionGeneracion, gestorRankingVinos, listaVinos, listapaises, interfazExcel);
 
         } catch (IOException e) {
             e.printStackTrace();
+        } catch (WriteException e) {
+            throw new RuntimeException(e);
         }
 
     }

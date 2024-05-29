@@ -3,7 +3,9 @@ package Boundary;
 import Control.GestorRankingVinos;
 import Entity.Pais;
 import Entity.Vino;
+import jxl.write.WriteException;
 
+import java.io.IOException;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -176,9 +178,9 @@ public class PantallaRankingVinos {
     public void solicitarConfPGReporte() {
         //Va con la pantalla
     }
-    public void tomarConfPGReporte(boolean confirmacionReporte, GestorRankingVinos gestor, List<Vino> vinos, List<Pais> listaPaises) {
+    public void tomarConfPGReporte(boolean confirmacionReporte, GestorRankingVinos gestor, List<Vino> vinos, List<Pais> listaPaises, InterfazExcel interfazExcel) throws IOException, WriteException {
         setConfirmacionGeneracionReporte(confirmacionReporte);
-        gestor.tomarConfPGReporte(confirmacionReporte, vinos, listaPaises);
+        gestor.tomarConfPGReporte(confirmacionReporte, vinos, listaPaises, interfazExcel);
     }
     public void informarGeneracionExitosa() {
         //Va con la pantalla
