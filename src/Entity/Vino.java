@@ -18,6 +18,8 @@ public class Vino {
     private List<Resena> resenas;
     private double promedioCalificacion;
 
+    private List<Resena> resenasPremiumPeriodo;
+
     //GETTERS AND SETTERS
 
     public Integer getAnada() {
@@ -111,11 +113,15 @@ public class Vino {
 
     public boolean tieneResena(LocalDate fechaDesde, LocalDate fechaHasta){
 
+        resenasPremiumPeriodo = new ArrayList<>();
+
         AtomicBoolean tieneResena = new AtomicBoolean(false);
 
         resenas.stream().forEach(resena ->{
-            if(resena.esDePeriodo(fechaDesde,fechaHasta) && resena.esPremium())
+            if(resena.esDePeriodo(fechaDesde,fechaHasta) && resena.esPremium()){
                 tieneResena.set(true);
+                resenasPremiumPeriodo.add(resena);
+            }
         });
 
 
@@ -126,11 +132,10 @@ public class Vino {
 
 
         double total = 0;
-        for (Resena resena : this.resenas) {
-            if(resena.esDePeriodo(fechaDesde,fechaHasta) && resena.esPremium())
-                total += resena.getPuntaje();
+        for (Resena resena : resenasPremiumPeriodo) {
+            total += resena.getPuntaje();
         }
-        if (!this.resenas.isEmpty())
+        if (!resenasPremiumPeriodo.isEmpty())
             promedioCalificacion = total / this.resenas.size();
         else
             promedioCalificacion = 0;
@@ -140,10 +145,10 @@ public class Vino {
         return this.bodega.getNombre();
     }
 
-    public List<String> obtenerDescripcionVarietal(){
-        List<String> descripcionVarietal = new ArrayList<>();
-        for (Varietal var : this.varietal) {
-            descripcionVarietal.add(var.getDescripcion());
+    public String obtenerDescripcionVarietal(){
+        String descripcionVarietal = "";
+        for (Varietal var : varietal) {
+            descripcionVarietal += var.getDescripcion() + " ";
         }
         return descripcionVarietal;
     }
@@ -151,5 +156,10 @@ public class Vino {
     public String obtenerUbicacion(List<Pais> paises){
         return this.bodega.obtenerNombrePais(paises);
     }
+
+    public String obtenerNombreRegionVitinicola(){
+        return bodega.obtenerNombreRegionVitivinicola();
+    }
+
 
 }

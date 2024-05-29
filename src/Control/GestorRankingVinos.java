@@ -1,9 +1,11 @@
 package Control;
 
 import Boundary.PantallaRankingVinos;
+import DTO.DTOReporte;
 import Entity.Vino;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
@@ -14,7 +16,7 @@ public class GestorRankingVinos {
     private String tipoVisualizacionReporteSeleccionado;
     private Boolean confirmacionReporte;
     private List<Vino> listaVinosConSommelier;
-    private List<Vino> listaTopDiezVinos;
+    private List<DTOReporte> listaTopDiezVinos;
 
     //GETTER AND SETTER
     public LocalDate getFechaDesde() {
@@ -66,11 +68,11 @@ public class GestorRankingVinos {
         this.listaVinosConSommelier = listaVinosConSommelier;
     }
 
-    public List<Vino> getListaTopDiezVinos() {
+    public List<DTOReporte> getListaTopDiezVinos() {
         return listaTopDiezVinos;
     }
 
-    public void setListaTopDiezVinos(List<Vino> listaTopDiezVinos) {
+    public void setListaTopDiezVinos(List<DTOReporte> listaTopDiezVinos) {
         this.listaTopDiezVinos = listaTopDiezVinos;
     }
 
@@ -101,6 +103,8 @@ public class GestorRankingVinos {
     }
     public void buscarVinosConResenasSommeliers(List<Vino> vinos) {
 
+        listaVinosConSommelier = new ArrayList<>();
+
         vinos.stream().forEach(vino ->{
             if(vino.tieneResena(fechaDesde,fechaHasta)){
                 listaVinosConSommelier.add(vino);
@@ -115,7 +119,31 @@ public class GestorRankingVinos {
     }
     public void ordenarVinosSegunCalificación() {
         listaVinosConSommelier.sort(Comparator.comparing(Vino::getPromedioCalificacion).reversed());
+        obtenerDatosTop10();
     }
+
+    public void obtenerDatosTop10(){ //ESTE METODO NO ESTÁ EN EL DIAGRAMA DE SECUENCIA, SE LLAMA ARRIBA
+
+        listaTopDiezVinos = new ArrayList<>();
+
+        for(int i = 0; i < 10; i++){
+            Vino vino = listaVinosConSommelier.get(i);
+
+            DTOReporte datosVino = new DTOReporte();
+
+            datosVino.setNombreVino(vino.getNombre());
+            datosVino.setPrecioVino(vino.getPrecio());
+            datosVino.setCalificacionVino(vino.getPromedioCalificacion());
+            datosVino.setCalificacionGeneral(i+1);
+            datosVino.setNombreBodega(vino.obtenerNombreBodega());
+            datosVino.setVarietal(vino.obtenerDescripcionVarietal());
+            datosVino.setNombreRegion(vino.obtenerNombreRegionVitinicola());
+            //datosVino.setNombrePais(vino.obtenerUbicacion()); FALTA TRAER LOS PAISES
+
+        }
+
+    }
+
     public Double obtenerCalificacionSommelier() {
         return null;
     }
