@@ -27,7 +27,7 @@ public class RegionVitivinicola {
             for (Provincia provincia: pais.getProvincias()) {
                 for (RegionVitivinicola region: provincia.getRegionVitivinicolas()) {
                     if (region.getNombre().equals(this.nombre))
-                            return pais.getNombre();
+                            return provincia.obtenerNombrePais(paises);
                 }
             }
         }

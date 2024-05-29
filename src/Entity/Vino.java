@@ -1,9 +1,13 @@
 package Entity;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 public class Vino {
+
+    //ATRIBUTOS
     private Integer anada;
     private String imagenEtiqueta;
     private String nombre;
@@ -12,6 +16,9 @@ public class Vino {
     private List<Varietal> varietal;
     private Bodega bodega;
     private List<Resena> resenas;
+    private double promedioCalificacion;
+
+    //GETTERS AND SETTERS
 
     public Integer getAnada() {
         return anada;
@@ -77,18 +84,56 @@ public class Vino {
         this.resenas = resenas;
     }
 
-    public boolean tieneResena(){
-        return !this.resenas.isEmpty();
+    public double getPromedioCalificacion() {
+        return promedioCalificacion;
     }
 
-    public double calcularPromedioCalif(){
+    public void setPromedioCalificacion(double promedioCalificacion) {
+        this.promedioCalificacion = promedioCalificacion;
+    }
+
+    //CONSTRUCTOR
+
+    public Vino(Integer anada, String imagenEtiqueta, String nombre, String notaDeCadaBodega, double precio,
+                List<Varietal> varietal, Bodega bodega, List<Resena> resenas) {
+        this.anada = anada;
+        this.imagenEtiqueta = imagenEtiqueta;
+        this.nombre = nombre;
+        this.notaDeCadaBodega = notaDeCadaBodega;
+        this.precio = precio;
+        this.varietal = varietal;
+        this.bodega = bodega;
+        this.resenas = resenas;
+    }
+
+
+    //OTROS METODOS
+
+    public boolean tieneResena(LocalDate fechaDesde, LocalDate fechaHasta){
+
+        AtomicBoolean tieneResena = new AtomicBoolean(false);
+
+        resenas.stream().forEach(resena ->{
+            if(resena.esDePeriodo(fechaDesde,fechaHasta) && resena.esPremium())
+                tieneResena.set(true);
+        });
+
+
+        return tieneResena.get();
+    }
+
+    public void calcularPromedioCalif(LocalDate fechaDesde, LocalDate fechaHasta){
+
+
         double total = 0;
         for (Resena resena : this.resenas) {
-            total += resena.getPuntaje();
+            if(resena.esDePeriodo(fechaDesde,fechaHasta) && resena.esPremium())
+                total += resena.getPuntaje();
         }
         if (!this.resenas.isEmpty())
-            return total / this.resenas.size();
-        return 0;
+            promedioCalificacion = total / this.resenas.size();
+        else
+            promedioCalificacion = 0;
     }
 
     public String obtenerNombreBodega(){

@@ -1,8 +1,10 @@
 package Control;
 
+import Boundary.PantallaRankingVinos;
 import Entity.Vino;
 
 import java.time.LocalDate;
+import java.util.Comparator;
 import java.util.List;
 
 public class GestorRankingVinos {
@@ -14,35 +16,7 @@ public class GestorRankingVinos {
     private List<Vino> listaVinosConSommelier;
     private List<Vino> listaTopDiezVinos;
 
-    private void opGenerarRankingDeVinos() {}
-    private void tomarFechasDesdeHasta(LocalDate fechaDesde, LocalDate fechaHasta) {
-        this.fechaDesde = fechaDesde;
-        this.fechaHasta = fechaHasta;
-    }
-    private void tomarTipoResena(String tipoResena) {
-        this.tipoResenaSeleccionada = tipoResena;
-    }
-    private void tomarFormaDeVisualiz(String formaVisualiz) {
-        this.tipoVisualizacionReporteSeleccionado = formaVisualiz;
-    }
-    private void tomarConfPGReporte(boolean isConfirmed) {
-        this.confirmacionReporte = isConfirmed;
-    }
-    private List<Vino> buscarVinosConResenasSommeliers(String sommelier) {
-        return null;
-    }
-    private List<Vino> ordenarVinosSegunCalificación() {
-        return null;
-    }
-    private Double obtenerCalificacionSommelier() {
-        return null;
-    }
-    private Double obtenerCalificacionGeneral() {
-        return null;
-    }
-    private void generarArchivoExcel() {}
-    private void finCU() {}
-
+    //GETTER AND SETTER
     public LocalDate getFechaDesde() {
         return fechaDesde;
     }
@@ -68,6 +42,7 @@ public class GestorRankingVinos {
     }
 
     public String getTipoVisualizacionReporteSeleccionado() {
+
         return tipoVisualizacionReporteSeleccionado;
     }
 
@@ -98,4 +73,56 @@ public class GestorRankingVinos {
     public void setListaTopDiezVinos(List<Vino> listaTopDiezVinos) {
         this.listaTopDiezVinos = listaTopDiezVinos;
     }
+
+    //CONSTRUCTOR
+    public GestorRankingVinos() {
+    }
+
+    //OTROS METODOS
+    public void opGenerarRankingDeVinos(PantallaRankingVinos pantalla) {
+        pantalla.solicitarFechaDesdeYHasta();
+    }
+    public void tomarFechasDesdeHasta(LocalDate fechaDesde, LocalDate fechaHasta, PantallaRankingVinos pantalla) {
+        setFechaDesde(fechaDesde);
+        setFechaHasta(fechaHasta);
+        pantalla.solicitarTipoResena();
+    }
+    public void tomarTipoResena(String tipoResena, PantallaRankingVinos pantalla) {
+        setTipoResenaSeleccionada(tipoResena);
+        pantalla.mostrarFormasDeVisualizPSeleccion();
+    }
+    public void tomarFormaDeVisualiz(String formaVisualizacion, PantallaRankingVinos pantalla) {
+        setTipoVisualizacionReporteSeleccionado(formaVisualizacion);
+        pantalla.solicitarConfPGReporte();
+    }
+    public void tomarConfPGReporte(boolean confirmacion, List<Vino> vinos) {
+        setConfirmacionReporte(confirmacion);
+        buscarVinosConResenasSommeliers(vinos);
+    }
+    public void buscarVinosConResenasSommeliers(List<Vino> vinos) {
+
+        vinos.stream().forEach(vino ->{
+            if(vino.tieneResena(fechaDesde,fechaHasta)){
+                listaVinosConSommelier.add(vino);
+            }
+        });
+
+        listaVinosConSommelier.stream().forEach(vino ->{
+            vino.calcularPromedioCalif(fechaDesde,fechaHasta);
+        });
+
+        ordenarVinosSegunCalificación();
+    }
+    public void ordenarVinosSegunCalificación() {
+        listaVinosConSommelier.sort(Comparator.comparing(Vino::getPromedioCalificacion).reversed());
+    }
+    public Double obtenerCalificacionSommelier() {
+        return null;
+    }
+    public Double obtenerCalificacionGeneral() {
+        return null;
+    }
+    public void generarArchivoExcel() {}
+    public void finCU() {}
+
 }
