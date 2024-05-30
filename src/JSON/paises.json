@@ -3,60 +3,107 @@
     "nombre": "Argentina",
     "provincias": [
       {
-        "nombre": "Córdoba",
+        "nombre": "Mendoza",
         "regionVitivinicolas": [
           {
-            "nombre": "regionI",
-            "descripcion": "descrip regionI"
+            "nombre": "Alto Luján de Cuyo",
+            "descripcion": "Subregión ubicada en el Valle de Uco, Mendoza, conocida por sus grandes vinos tintos de altura."
           },
           {
-            "nombre": "regionC",
-            "descripcion": "descrip regionC"
+            "nombre": "Luján de Cuyo",
+            "descripcion": "Una de las regiones vitivinícolas más importantes de Mendoza, conocida por sus vinos tintos de alta calidad."
+          },
+          {
+            "nombre": "Valle de Uco",
+            "descripcion": "Una de las regiones vitivinícolas más importantes de Argentina, conocida por sus vinos blancos de gran calidad y expresión."
           }
         ]
       },
       {
-        "nombre": "Mendoza",
+        "nombre": "Salta",
         "regionVitivinicolas": [
           {
-            "nombre": "regionA",
-            "descripcion": "descrip regionA"
-          },
-          {
-            "nombre": "regionD",
-            "descripcion": "descrip regionD"
+            "nombre": "Valles Calchaquíes",
+            "descripcion": "Una región vitivinícola única, ubicada en el norte de Argentina, conocida por sus vinos de gran carácter y expresión."
           }
         ]
       }
     ]
   },
   {
-
-    "nombre": "Uruguay",
+    "nombre": "Francia",
     "provincias": [
       {
-        "nombre": "Salto",
+        "nombre": "Bordeos",
         "regionVitivinicolas": [
           {
-            "nombre": "regionF",
-            "descripcion": "descrip regionF"
-          },
-          {
-            "nombre": "regionG",
-            "descripcion": "descrip regionG"
+            "nombre": "Burdeos",
+            "descripcion": "Una de las regiones vitivinícolas más prestigiosas del mundo, conocida por sus vinos tintos de Cabernet Sauvignon y Merlot."
           }
         ]
       },
       {
-        "nombre": "Florida",
+        "nombre": "Borgoña",
         "regionVitivinicolas": [
           {
-            "nombre": "regionB",
-            "descripcion": "descrip regionB"
-          },
+            "nombre": "Borgoña",
+            "descripcion": "Una de las regiones vitivinícolas más prestigiosas del mundo, conocida por sus Pinot Noir complejos y elegantes."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nombre": "Australia",
+    "provincias": [
+      {
+        "nombre": "Barossa Valley",
+        "regionVitivinicolas": [
           {
-            "nombre": "regionH",
-            "descripcion": "descrip regionH"
+            "nombre": "Barossa Valley",
+            "descripcion": "Una de las regiones vitivinícolas más importantes de Australia, conocida por sus vinos tintos intensos y complejos."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nombre": "Estados Unidos",
+    "provincias": [
+      {
+        "nombre": "California",
+        "regionVitivinicolas": [
+          {
+            "nombre": "Napa Valley",
+            "descripcion": "La región vitivinícola más famosa de California, conocida por sus vinos tintos de alta gama."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nombre": "Italia",
+    "provincias": [
+      {
+        "nombre": "Toscana",
+        "regionVitivinicolas": [
+          {
+            "nombre": "Toscana",
+            "descripcion": "Una de las regiones vitivinícolas más antiguas e importantes de Italia, conocida por sus vinos tintos de Sangiovese."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nombre": "España",
+    "provincias": [
+      {
+        "nombre": "Castilla y León",
+        "regionVitivinicolas": [
+          {
+            "nombre": "Ribera del Duero",
+            "descripcion": "Una región vitivinícola española conocida por sus vinos tintos Tempranillo intensos y complejos."
           }
         ]
       }

@@ -1,109 +1,613 @@
 [
   {
-    "anada": 2010,
-    "imagenEtiqueta": "Etiqueta1",
-    "nombre": "Vino1",
-    "notaDeCadaBodega": "nota1",
-    "precio": 1500.50,
+    "anada": 2019,
+    "imagenEtiqueta": "https://www.catenazapata.com/sites/default/files/styles/vino_grande/public/adrianna_vineyard_malbec_2019.jpg",
+    "nombre": "Catena Zapata Adrianna Vineyard Malbec",
+    "notaDeCadaBodega": "99 pts. James Suckling",
+    "precio": 18000,
     "varietal": [
       {
-        "descripcion": "uvaA",
-        "porcentajeComposicion": 0.50
-      },
-      {
-        "descripcion": "uvaB",
-        "porcentajeComposicion": 0.50
+        "descripcion": "Malbec",
+        "porcentajeComposicion": 100
       }
     ],
     "bodega": {
-      "coordenadasUbicacion": "100, 500",
-      "descripcion": "descrip bodega1",
-      "historia": "historia1",
-      "nombre": "bodega1",
+      "coordenadasUbicacion": "-33.84644,-69.18972",
+      "descripcion": "Bodega familiar fundada en 1991, pionera en la elaboración de vinos de altura en Mendoza.",
+      "historia": "https://www.catenazapata.com/es/nuestra-historia",
+      "nombre": "Catena Zapata",
       "periodoActualizacion": "2024-07-01",
       "regionVitivinicola": {
-        "nombre": "regionA",
-        "descripcion": "descrip regionA"
+        "nombre": "Alto Luján de Cuyo",
+        "descripcion": "Subregión ubicada en el Valle de Uco, Mendoza, conocida por sus grandes vinos tintos de altura."
       }
     },
     "resenas": [
       {
-        "comentario":  "comentario1A",
+        "comentario": "Un Malbec excepcional, con aromas intensos a frutas negras, especias y violetas, taninos firmes y un final largo y persistente. Un vino de guarda con un gran potencial.",
         "esPremium": true,
-        "fechaReserva": "2024-07-01",
-        "puntaje": 7
+        "fechaResena": "2024-05-25",
+        "puntaje": 98
       },
       {
-        "comentario":  "comentario1B",
+        "comentario": "Un vino complejo y elegante, que refleja a la perfección el terroir único del viñedo Adrianna. Un Malbec que no te defraudará.",
         "esPremium": false,
-        "fechaReserva": "2023-07-01",
-        "puntaje": 9
+        "fechaResena": "2023-12-25",
+        "puntaje": 95
       },
       {
-        "comentario":  "comentario1C",
+        "comentario": "Un Malbec de clase mundial, que merece estar en la cava de cualquier coleccionista. Un vino que te dejará sin palabras.",
         "esPremium": true,
-        "fechaReserva": "2023-10-01",
-        "puntaje": 8
+        "fechaResena": "2022-10-10",
+        "puntaje": 100
       },
       {
-        "comentario":  "comentario1D",
+        "comentario": "Un vino que te transporta a las montañas de Mendoza. Un Malbec fresco, vibrante y lleno de sabor.",
         "esPremium": false,
-        "fechaReserva": "2024-07-01",
-        "puntaje": 6
+        "fechaResena": "2021-07-04",
+        "puntaje": 92
+      },
+      {
+        "comentario": "Un Malbec que te invita a disfrutar de cada momento. Un vino perfecto para compartir con amigos y familia.",
+        "esPremium": true,
+        "fechaResena": "2020-04-01",
+        "puntaje": 94
       }
     ]
   },
   {
-    "anada": 2015,
-    "imagenEtiqueta": "Etiqueta2",
-    "nombre": "Vino2",
-    "notaDeCadaBodega": "nota2",
-    "precio": 1900,
+    "anada": 2020,
+    "imagenEtiqueta": "https://www.luigibosca.com.ar/wp-content/uploads/2021/03/fincalaslilas_malbec_2020_web.jpg",
+    "nombre": "Luigi Bosca Finca Las Lilas Malbec",
+    "notaDeCadaBodega": "93 pts. Robert Parker",
+    "precio": 6000,
     "varietal": [
       {
-        "descripcion": "uvaA",
-        "porcentajeComposicion": 0.70
-      },
-      {
-        "descripcion": "uvaB",
-        "porcentajeComposicion": 0.30
+        "descripcion": "Malbec",
+        "porcentajeComposicion": 100
       }
     ],
     "bodega": {
-      "coordenadasUbicacion": "300, 500",
-      "descripcion": "descrip bodega2",
-      "historia": "historia2",
-      "nombre": "bodega2",
-      "periodoActualizacion": "2023-05-01",
+      "coordenadasUbicacion": "-33.64911,-68.71444",
+      "descripcion": "Bodega familiar fundada en 1958, reconocida por sus vinos elegantes y equilibrados.",
+      "historia": "https://www.luigibosca.com.ar/es/nuestra-historia/",
+      "nombre": "Luigi Bosca",
+      "periodoActualizacion": "2024-07-01",
       "regionVitivinicola": {
-        "nombre": "regionB",
-        "descripcion": "descrip regionB"
+        "nombre": "Luján de Cuyo",
+        "descripcion": "Una de las regiones vitivinícolas más importantes de Mendoza, conocida por sus vinos tintos de alta calidad."
       }
     },
     "resenas": [
       {
-        "comentario":  "comentario2A",
-        "esPremium": false,
-        "fechaReserva": "2023-03-01",
-        "puntaje": 5
-      },
-      {
-        "comentario":  "comentario2B",
+        "comentario": "Un Malbec equilibrado y armonioso, con aromas a frutas rojas maduras, especias y chocolate. Taninos suaves y un final persistente.",
         "esPremium": true,
-        "fechaReserva": "2023-02-01",
-        "puntaje": 6
+        "fechaResena": "2024-05-25",
+        "puntaje": 92
       },
       {
-        "comentario":  "comentario2C",
+        "comentario": "Un vino elegante y complejo, que expresa fielmente las características del terroir de Luján de Cuyo.",
         "esPremium": false,
-        "fechaReserva": "2023-10-01",
-        "puntaje": 7
+        "fechaResena": "2023-11-11",
+        "puntaje": 90
       },
       {
-        "comentario":  "comentario2D",
+        "comentario": "Un Malbec ideal para acompañar carnes rojas, pastas y quesos.",
+        "esPremium": true,
+        "fechaResena": "2022-08-08",
+        "puntaje": 91
+      },
+      {
+        "comentario": "Un vino que te sorprenderá por su relación calidad-precio.",
         "esPremium": false,
-        "fechaReserva": "2024-07-01",
-        "puntaje": 6
+        "fechaResena": "2021-05-05",
+        "puntaje": 88
+      },
+      {
+        "comentario": "Un Malbec perfecto para disfrutar en cualquier ocasión.",
+        "esPremium": true,
+        "fechaResena": "2020-02-02",
+        "puntaje": 89
+      }
+    ]
+  },
+  {
+    "anada": 2018,
+    "imagenEtiqueta": "https://www.nortonwines.com/wp-content/uploads/2021/07/FINCA-LA-EMPANADA-SINGLE-VINEYARD-MALBEC-2018-WEB.png",
+    "nombre": "Norton Finca La Empanada Malbec",
+    "notaDeCadaBodega": "91 pts. Tim Atkin",
+    "precio": 4500,
+    "varietal": [
+      {
+        "descripcion": "Malbec",
+        "porcentajeComposicion": 100
+      }
+    ],
+    "bodega": {
+      "coordenadasUbicacion": "-24.92922,-65.48083",
+      "descripcion": "Bodega fundada en 1895, pionera en la elaboración de vinos de altura en Cafayate.",
+      "historia": "https://www.nortonwines.com/es/historia/",
+      "nombre": "Norton",
+      "periodoActualizacion": "2024-07-01",
+      "regionVitivinicola": {
+        "nombre": "Valles Calchaquíes",
+        "descripcion": "Una región vitivinícola única, ubicada en el norte de Argentina, conocida por sus vinos de gran carácter y expresión."
+      }
+    },
+    "resenas": [
+      {
+        "comentario": "Un Malbec intenso y expresivo, con aromas a frutas negras, especias y violetas. Taninos firmes y un final largo y persistente.",
+        "esPremium": true,
+        "fechaResena": "2024-01-30",
+        "puntaje": 93
+      },
+      {
+        "comentario": "Un vino que refleja a la perfección el terroir único de los Valles Calchaquíes.",
+        "esPremium": false,
+        "fechaResena": "2023-09-09",
+        "puntaje": 90
+      },
+      {
+        "comentario": "Un Malbec ideal para acompañar carnes rojas, pastas y quesos maduros.",
+        "esPremium": true,
+        "fechaResena": "2022-06-06",
+        "puntaje": 92
+      }
+    ]
+  },
+  {
+    "anada": 2021,
+    "imagenEtiqueta": "https://www.chapadmalal.com/wp-content/uploads/2022/01/Chapadmalal-Chardonnay-2021-web.jpg",
+    "nombre": "Chapadmalal Chardonnay",
+    "notaDeCadaBodega": "95 pts. James Suckling",
+    "precio": 5800,
+    "varietal": [
+      {
+        "descripcion": "Chardonnay",
+        "porcentajeComposicion": 100
+      }
+    ],
+    "bodega": {
+      "coordenadasUbicacion": "-33.82413,-68.82306",
+      "descripcion": "Bodega boutique fundada en 1998, reconocida por sus vinos Chardonnay de alta gama.",
+      "historia": "https://www.chapadmalal.com/es/historia/",
+      "nombre": "Chapadmalal",
+      "periodoActualizacion": "2024-07-01",
+      "regionVitivinicola": {
+        "nombre": "Alto Valle de Uco",
+        "descripcion": "Subregión ubicada en el Valle de Uco, Mendoza, conocida por sus vinos blancos de gran complejidad y elegancia."
+      }
+    },
+    "resenas": [
+      {
+        "comentario": "Un Chardonnay excepcional, con aromas intensos a frutas blancas, cítricos y flores blancas. Un cuerpo cremoso, acidez equilibrada y un final largo y persistente.",
+        "esPremium": true,
+        "fechaResena": "2024-03-30",
+        "puntaje": 96
+      },
+      {
+        "comentario": "Un vino complejo y elegante, que refleja a la perfección el terroir único del Alto Valle de Uco.",
+        "esPremium": false,
+        "fechaResena": "2023-05-04",
+        "puntaje": 94
+      }
+    ]
+  },
+  {
+    "anada": 2022,
+    "imagenEtiqueta": "https://nietosenetual.com.ar/wp-content/uploads/2022/09/NIETO-SENETUAL-TORRONTES-2022-web.jpg",
+    "nombre": "Nieto Senetual Torrontés",
+    "notaDeCadaBodega": "90 pts. Decanter",
+    "precio": 3200,
+    "varietal": [
+      {
+        "descripcion": "Torrontés",
+        "porcentajeComposicion": 100
+      }
+    ],
+    "bodega": {
+      "coordenadasUbicacion": "-31.56083,-68.50639",
+      "descripcion": "Bodega familiar fundada en 1942, pionera en la elaboración de vinos Torrontés en Argentina.",
+      "historia": "https://nietosenetual.com.ar/es/historia/",
+      "nombre": "Nieto Senetual",
+      "periodoActualizacion": "2024-07-01",
+      "regionVitivinicola": {
+        "nombre": "Valle de Uco",
+        "descripcion": "Una de las regiones vitivinícolas más importantes de Argentina, conocida por sus vinos blancos de gran calidad y expresión."
+      }
+    },
+    "resenas": [
+      {
+        "comentario": "Un Torrontés aromático y floral, con aromas intensos a jazmín, flores blancas y frutas tropicales. Un cuerpo ligero, acidez refrescante y un final vibrante.",
+        "esPremium": true,
+        "fechaResena": "2024-05-30",
+        "puntaje": 92
+      },
+      {
+        "comentario": "Un vino que refleja a la perfección la cepa Torrontés, una de las más emblemáticas de Argentina.",
+        "esPremium": false,
+        "fechaResena": "2023-03-03",
+        "puntaje": 89
+      },
+      {
+        "comentario": "Un Torrontés ideal para acompañar ensaladas, pescados y mariscos.",
+        "esPremium": true,
+        "fechaResena": "2022-02-02",
+        "puntaje": 91
+      },
+      {
+        "comentario": "Un vino perfecto para disfrutar en cualquier ocasión.",
+        "esPremium": false,
+        "fechaResena": "2021-01-01",
+        "puntaje": 88
+      }
+    ]
+  },
+  {
+    "anada": 2021,
+    "imagenEtiqueta": "https://www.familiazuccardi.com/wp-content/uploads/2022/02/Q-Chardonnay-2021-web.jpg",
+    "nombre": "Familia Zuccardi Q Chardonnay",
+    "notaDeCadaBodega": "94 pts. Robert Parker",
+    "precio": 7500,
+    "varietal": [
+      {
+        "descripcion": "Chardonnay",
+        "porcentajeComposicion": 100
+      }
+    ],
+    "bodega": {
+      "coordenadasUbicacion": "-33.04611,-68.73972",
+      "descripcion": "Bodega familiar fundada en 1933, reconocida por sus vinos de alta gama y compromiso con la sostenibilidad.",
+      "historia": "https://www.familiazuccardi.com/es/historia/",
+      "nombre": "Familia Zuccardi",
+      "periodoActualizacion": "2024-07-01",
+      "regionVitivinicola": {
+        "nombre": "Valle de Uco",
+        "descripcion": "Una de las regiones vitivinícolas más importantes de Argentina, conocida por sus vinos blancos de gran calidad y expresión."
+      }
+    },
+    "resenas": [
+      {
+        "comentario": "Un Chardonnay excepcional, con aromas intensos a frutas blancas, cítricos y flores blancas. Un cuerpo elegante, acidez equilibrada y un final largo y persistente.",
+        "esPremium": true,
+        "fechaResena": "2024-03-23",
+        "puntaje": 96
+      },
+      {
+        "comentario": "Un vino que refleja a la perfección el terroir único del Valle de Uco.",
+        "esPremium": false,
+        "fechaResena": "2023-12-12",
+        "puntaje": 93
+      },
+      {
+        "comentario": "Un Chardonnay ideal para acompañar platos de pescado, aves y quesos.",
+        "esPremium": true,
+        "fechaResena": "2022-09-09",
+        "puntaje": 95
+      }
+    ]
+  },
+  {
+    "anada": 2016,
+    "imagenEtiqueta": "https://www.chateaumargaux.com/wp-content/uploads/2020/02/CMargaux2016-300x300.jpg",
+    "nombre": "Château Margaux 2016",
+    "notaDeCadaBodega": "98 pts. James Suckling",
+    "precio": 12000,
+    "varietal": [
+      {
+        "descripcion": "Cabernet Sauvignon",
+        "porcentajeComposicion": 65
+      },
+      {
+        "descripcion": "Merlot",
+        "porcentajeComposicion": 25
+      },
+      {
+        "descripcion": "Petit Verdot",
+        "porcentajeComposicion": 8
+      },
+      {
+        "descripcion": "Cabernet Franc",
+        "porcentajeComposicion": 2
+      }
+    ],
+    "bodega": {
+      "coordenadasUbicacion": "45.043333,0.708333",
+      "descripcion": "Bodega histórica fundada en el siglo XVII, reconocida por sus vinos tintos de alta gama.",
+      "historia": "https://www.chateaumargaux.com/en/history/",
+      "nombre": "Château Margaux",
+      "periodoActualizacion": "2024-07-01",
+      "regionVitivinicola": {
+        "nombre": "Burdeos",
+        "descripcion": "Una de las regiones vitivinícolas más prestigiosas del mundo, conocida por sus vinos tintos de Cabernet Sauvignon y Merlot."
+      }
+    },
+    "resenas": [
+      {
+        "comentario": "Un vino tinto excepcional, con aromas intensos a frutas negras, especias y tabaco. En boca, tiene un cuerpo estructurado, taninos firmes y un final largo y persistente. Un vino de guarda con un gran potencial de envejecimiento.",
+        "esPremium": true,
+        "fechaResena": "2024-02-05",
+        "puntaje": 99
+      },
+      {
+        "comentario": "Un Château Margaux clásico, que expresa a la perfección el terroir de Margaux.",
+        "esPremium": false,
+        "fechaResena": "2023-10-10",
+        "puntaje": 97
+      },
+      {
+        "comentario": "Un vino ideal para acompañar carnes rojas, caza y quesos maduros.",
+        "esPremium": true,
+        "fechaResena": "2022-07-07",
+        "puntaje": 98
+      }
+    ]
+  },
+  {
+    "anada": 2018,
+    "imagenEtiqueta": "https://www.domainederomaneconti.fr/wp-content/uploads/2021/06/DRC-Romanee-Conti-2018-300x300.jpg",
+    "nombre": "Domaine de la Romanée-Conti Romanée-Conti Grand Cru 2018",
+    "notaDeCadaBodega": "100 pts. Robert Parker",
+    "precio": 30000,
+    "varietal": [
+      {
+        "descripcion": "Pinot Noir",
+        "porcentajeComposicion": 100
+      }
+    ],
+    "bodega": {
+      "coordenadasUbicacion": "47.136667,4.971667",
+      "descripcion": "Bodega familiar fundada en el siglo XIX, reconocida por sus excepcionales vinos tintos de Pinot Noir.",
+      "historia": "https://www.domainederomaneconti.fr/en/history/",
+      "nombre": "Domaine de la Romanée-Conti",
+      "periodoActualizacion": "2024-07-01",
+      "regionVitivinicola": {
+        "nombre": "Borgoña",
+        "descripcion": "Una de las regiones vitivinícolas más prestigiosas del mundo, conocida por sus Pinot Noir complejos y elegantes."
+      }
+    },
+    "resenas": [
+      {
+        "comentario": "Un vino tinto de Pinot Noir excepcional, considerado por muchos como uno de los mejores del mundo. Posee aromas intensos a frutos rojos, especias y flores, con un cuerpo elegante y complejo, taninos sedosos y un final largo y persistente. Es un vino de guarda con un gran potencial de envejecimiento.",
+        "esPremium": true,
+        "fechaResena": "2024-05-30",
+        "puntaje": 99
+      },
+      {
+        "comentario": "Una expresión pura y sin adulterar del terroir único de Romanée-Conti.",
+        "esPremium": false,
+        "fechaResena": "2023-08-08",
+        "puntaje": 98
+      },
+      {
+        "comentario": "Un vino que requiere tiempo y paciencia para apreciarlo en toda su plenitud.",
+        "esPremium": true,
+        "fechaResena": "2022-05-05",
+        "puntaje": 100
+      },
+      {
+        "comentario": "Una obra maestra de la elaboración del vino, que representa lo mejor de Borgoña.",
+        "esPremium": false,
+        "fechaResena": "2021-02-02",
+        "puntaje": 99
+      }
+    ]
+  },
+  {
+    "anada": 2021,
+    "imagenEtiqueta": "https://www.penfolds.com/wp-content/uploads/2022/09/Penfolds-Grange-2021-300x300.jpg",
+    "nombre": "Penfolds Grange 2021",
+    "notaDeCadaBodega": "98 pts. James Suckling",
+    "precio": 15000,
+    "varietal": [
+      {
+        "descripcion": "Shiraz",
+        "porcentajeComposicion": 80
+      },
+      {
+        "descripcion": "Cabernet Sauvignon",
+        "porcentajeComposicion": 19
+      },
+      {
+        "descripcion": "Grenache",
+        "porcentajeComposicion": 1
+      }
+    ],
+    "bodega": {
+      "coordenadasUbicacion": "-34.541667,138.658333",
+      "descripcion": "Bodega icónica fundada en 1844, reconocida por sus vinos tintos australianos de alta gama.",
+      "historia": "https://www.penfolds.com/en/our-story/",
+      "nombre": "Penfolds",
+      "periodoActualizacion": "2024-07-01",
+      "regionVitivinicola": {
+        "nombre": "Barossa Valley",
+        "descripcion": "Una de las regiones vitivinícolas más importantes de Australia, conocida por sus vinos tintos intensos y complejos."
+      }
+    },
+    "resenas": [
+      {
+        "comentario": "Un vino tinto australiano legendario, con aromas intensos a frutas negras, especias y chocolate. En boca, es corpulento, con taninos firmes y un final largo y persistente. Es un vino de guarda con un gran potencial de envejecimiento.",
+        "esPremium": true,
+        "fechaResena": "2024-01-13",
+        "puntaje": 99
+      },
+      {
+        "comentario": "Una expresión magistral del estilo único de Penfolds Grange.",
+        "esPremium": false,
+        "fechaResena": "2023-04-04",
+        "puntaje": 97
+      }
+    ]
+  },
+  {
+    "anada": 2019,
+    "imagenEtiqueta": "https://www.screamingeagle.com/wp-content/uploads/2022/02/Screaming-Eagle-2019-300x300.jpg",
+    "nombre": "Screaming Eagle Cabernet Sauvignon 2019",
+    "notaDeCadaBodega": "100 pts. Robert Parker",
+    "precio": 100000,
+    "varietal": [
+      {
+        "descripcion": "Cabernet Sauvignon",
+        "porcentajeComposicion": 100
+      }
+    ],
+    "bodega": {
+      "coordenadasUbicacion": "38.350278,-122.414444",
+      "descripcion": "Bodega boutique fundada en 1972, reconocida por sus vinos tintos Cabernet Sauvignon de culto.",
+      "historia": "https://www.screamingeagle.com/our-story/",
+      "nombre": "Screaming Eagle",
+      "periodoActualizacion": "2024-07-01",
+      "regionVitivinicola": {
+        "nombre": "Napa Valley",
+        "descripcion": "La región vitivinícola más famosa de California, conocida por sus vinos tintos de alta gama."
+      }
+    },
+    "resenas": [
+      {
+        "comentario": "Un vino tinto californiano de culto, con aromas intensos a frutas negras, especias y cedro. En boca, es elegante y equilibrado, con taninos suaves y un final largo y persistente. Es un vino de guarda con un gran potencial de envejecimiento.",
+        "esPremium": true,
+        "fechaResena": "2024-05-30",
+        "puntaje": 99
+      }
+    ]
+  },
+  {
+    "anada": 2018,
+    "imagenEtiqueta": "https://www.antinori.it/wp-content/uploads/2022/02/Tignanello-2018-300x300.jpg",
+    "nombre": "Tignanello 2018",
+    "notaDeCadaBodega": "98 pts. James Suckling",
+    "precio": 6000,
+    "varietal": [
+      {
+        "descripcion": "Sangiovese",
+        "porcentajeComposicion": 80
+      },
+      {
+        "descripcion": "Cabernet Sauvignon",
+        "porcentajeComposicion": 15
+      },
+      {
+        "descripcion": "Canaiolo",
+        "porcentajeComposicion": 5
+      }
+    ],
+    "bodega": {
+      "coordenadasUbicacion": "43.433333,11.283333",
+      "descripcion": "Bodega familiar fundada en el siglo XVI, reconocida por sus vinos tintos Super Tuscan innovadores.",
+      "historia": "https://www.antinori.it/en/history/",
+      "nombre": "Antinori",
+      "periodoActualizacion": "2024-07-01",
+      "regionVitivinicola": {
+        "nombre": "Toscana",
+        "descripcion": "Una de las regiones vitivinícolas más antiguas e importantes de Italia, conocida por sus vinos tintos de Sangiovese."
+      }
+    },
+    "resenas": [
+      {
+        "comentario": "Un vino tinto italiano innovador, que combina la tradición con la modernidad. Tiene aromas intensos a frutas negras, especias y violetas. En boca, es elegante y complejo, con taninos firmes y un final largo y persistente. Es un vino de guarda con un gran potencial de envejecimiento.",
+        "esPremium": true,
+        "fechaResena": "2024-02-10",
+        "puntaje": 99
+      },
+      {
+        "comentario": "Un Tignanello clásico, que expresa a la perfección el terroir único de Chianti Classico.",
+        "esPremium": false,
+        "fechaResena": "2023-11-11",
+        "puntaje": 97
+      }
+    ]
+  },
+  {
+    "anada": 2010,
+    "imagenEtiqueta": "https://www.bodegasdearanda.com/wp-content/uploads/2021/03/unico-2010-300x300.jpg",
+    "nombre": "Vega Sicilia Único 2010",
+    "notaDeCadaBodega": "99 pts. Penfolds",
+    "precio": 3500,
+    "varietal": [
+      {
+        "descripcion": "Tempranillo",
+        "porcentajeComposicion": 100
+      }
+    ],
+    "bodega": {
+      "coordenadasUbicacion": "41.366667,-3.95",
+      "descripcion": "Bodega histórica fundada en 1882, reconocida por sus vinos tintos Tempranillo de alta gama.",
+      "historia": "https://www.bodegasdearanda.com/en/history/",
+      "nombre": "Vega Sicilia",
+      "periodoActualizacion": "2024-07-01",
+      "regionVitivinicola": {
+        "nombre": "Ribera del Duero",
+        "descripcion": "Una región vitivinícola espanadala conocida por sus vinos tintos Tempranillo intensos y complejos."
+      }
+    },
+    "resenas": [
+      {
+        "comentario": "Un vino tinto espanadal legendario, considerado por muchos como uno de los mejores del mundo. Tiene aromas intensos a frutas negras, especias y cuero. En boca, es complejo y elegante, con taninos firmes y un final largo y persistente. Es un vino de guarda con un gran potencial de envejecimiento.",
+        "esPremium": true,
+        "fechaResena": "2024-01-30",
+        "puntaje": 100
+      },
+      {
+        "comentario": "Una expresión magistral del terroir único de la Ribera del Duero.",
+        "esPremium": false,
+        "fechaResena": "2022-09-09",
+        "puntaje": 98
+      },
+      {
+        "comentario": "Un vino que requiere tiempo y paciencia para apreciarlo en toda su plenitud.",
+        "esPremium": true,
+        "fechaResena": "2021-03-03",
+        "puntaje": 99
+      }
+    ]
+  },
+  {
+    "anada": 2016,
+    "imagenEtiqueta": "https://www.chateauraayas.com/wp-content/uploads/2021/03/CDP2016-300x300.jpg",
+    "nombre": "Clos Du Pape Château Rayas 2016",
+    "notaDeCadaBodega": "100 pts. Robert Parker",
+    "precio": 12000,
+    "varietal": [
+      {
+        "descripcion": "Grenache",
+        "porcentajeComposicion": 100
+      }
+    ],
+    "bodega": {
+      "coordenadasUbicacion": "44.308333,4.841667",
+      "descripcion": "Bodega familiar fundada en el siglo XIX, reconocida por sus vinos tintos Grenache excepcionales de Châteauneuf-du-Pape.",
+      "historia": "https://www.chateauraayas.com/en/history/",
+      "nombre": "Château Rayas",
+      "periodoActualizacion": "2024-07-01",
+      "regionVitivinicola": {
+        "nombre": "Rhône Valley",
+        "descripcion": "Una de las regiones vitivinícolas más prestigiosas de Francia, conocida por sus vinos tintos complejos y elegantes de Syrah y Grenache."
+      }
+    },
+    "resenas": [
+      {
+        "comentario": "Un vino tinto francés excepcional, considerado por muchos como uno de los mejores Châteauneuf-du-Pape del mundo. Tiene aromas intensos a frutas negras, especias y garbanzos. En boca, es corpulento y estructurado, con taninos firmes y un final largo y persistente. Es un vino de guarda con un gran potencial de envejecimiento.",
+        "esPremium": true,
+        "fechaResena": "2024-02-16",
+        "puntaje": 99
+      },
+      {
+        "comentario": "Una expresión pura y sin adulterar del terroir único de Château Rayas.",
+        "esPremium": false,
+        "fechaResena": "2023-02-02",
+        "puntaje": 98
+      },
+      {
+        "comentario": "Un vino que requiere tiempo y paciencia para apreciarlo en toda su plenitud.",
+        "esPremium": true,
+        "fechaResena": "2022-06-06",
+        "puntaje": 100
+      },
+      {
+        "comentario": "Una obra maestra de la elaboración del vino, que representa lo mejor del Rhône Valley.",
+        "esPremium": false,
+        "fechaResena": "2021-10-10",
+        "puntaje": 99
       }
     ]
   }

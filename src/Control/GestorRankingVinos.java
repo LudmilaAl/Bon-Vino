@@ -171,7 +171,7 @@ public class GestorRankingVinos {
         return posicionGeneral + 1;
     }
     public void generarArchivoExcel(InterfazExcel interfazExcel) throws IOException, WriteException {
-        String nombreArchivo = "C:\\Users\\Usuario\\Ranking de Vinos.xls";
+        String nombreArchivo = "C:\\Users\\Usuario\\Downloads\\Ranking de Vinos.xls";
         WritableWorkbook  workbook = Workbook.createWorkbook(new File(nombreArchivo));
         WritableSheet sheet = workbook.createSheet("Ranking",0);
 

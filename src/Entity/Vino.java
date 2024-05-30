@@ -140,7 +140,7 @@ public class Vino {
             total += resena.getPuntaje();
         }
         if (!resenasPremiumPeriodo.isEmpty())
-            promedioCalificacion = total / this.resenas.size();
+            promedioCalificacion =  Math.round((total / resenasPremiumPeriodo.size())* 100.0) / 100.0;
         else
             promedioCalificacion = 0;
     }

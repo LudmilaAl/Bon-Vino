@@ -5,7 +5,7 @@ import java.time.LocalDate;
 public class Resena {
     private String comentario;
     private boolean esPremium;
-    private LocalDate fechaReserva;
+    private LocalDate fechaResena;
     private Double puntaje;
 
 
@@ -33,12 +33,12 @@ public class Resena {
         this.puntaje = puntaje;
     }
 
-    public LocalDate getFechaReserva() {
-        return fechaReserva;
+    public LocalDate getFechaResena() {
+        return fechaResena;
     }
 
-    public void setFechaReserva(LocalDate fechaReserva) {
-        this.fechaReserva = fechaReserva;
+    public void setFechaResena(LocalDate fechaResena) {
+        this.fechaResena = fechaResena;
     }
 
     public boolean esPremium(){
@@ -47,6 +47,6 @@ public class Resena {
     }
 
     public boolean esDePeriodo(LocalDate fechaDesde, LocalDate fechaHasta){
-        return (this.fechaReserva.isAfter(fechaDesde) && this.fechaReserva.isBefore(fechaHasta));
+        return (this.fechaResena.isAfter(fechaDesde) && this.fechaResena.isBefore(fechaHasta));
     }
 }
