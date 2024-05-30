@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Provincia {
     private String nombre;
-    private List<RegionVitivinicola> regionVitivinicolas;
+    private List<RegionVitivinicola> regionesVitivinicolas;
 
     public String getNombre() {
         return nombre;
@@ -14,12 +14,12 @@ public class Provincia {
         this.nombre = nombre;
     }
 
-    public List<RegionVitivinicola> getRegionVitivinicolas() {
-        return regionVitivinicolas;
+    public List<RegionVitivinicola> getRegionesVitivinicolas() {
+        return regionesVitivinicolas;
     }
 
-    public void setRegionVitivinicolas(List<RegionVitivinicola> regionVitivinicolas) {
-        this.regionVitivinicolas = regionVitivinicolas;
+    public void setRegionesVitivinicolas(List<RegionVitivinicola> regionesVitivinicolas) {
+        this.regionesVitivinicolas = regionesVitivinicolas;
     }
 
     public String obtenerNombrePais(List<Pais> paises){

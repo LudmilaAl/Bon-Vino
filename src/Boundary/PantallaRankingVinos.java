@@ -139,11 +139,11 @@ public class PantallaRankingVinos {
 
     //OTROS METODOS
     public void opGenerarRankingDeVinos(GestorRankingVinos gestor) {
-        habilitarPantalla();
-        gestor.opGenerarRankingDeVinos(this);
+        habilitarPantalla(gestor);
     }
-    public void habilitarPantalla() {
-        //Va con la pantalla
+    public void habilitarPantalla(GestorRankingVinos gestor) {
+        solicitarFechaDesdeYHasta();
+        gestor.opGenerarRankingDeVinos(this);
     }
     public void solicitarFechaDesdeYHasta() {
         //Va con la pantalla

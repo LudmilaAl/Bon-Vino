@@ -25,7 +25,7 @@ public class RegionVitivinicola {
     public String obtenerNombrePais(List<Pais> paises){
         for (Pais pais: paises) {
             for (Provincia provincia: pais.getProvincias()) {
-                for (RegionVitivinicola region: provincia.getRegionVitivinicolas()) {
+                for (RegionVitivinicola region: provincia.getRegionesVitivinicolas()) {
                     if (region.getNombre().equals(this.nombre))
                             return provincia.obtenerNombrePais(paises);
                 }

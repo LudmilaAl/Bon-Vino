@@ -17,7 +17,7 @@ public class Resena {
         this.comentario = comentario;
     }
 
-    public boolean isEsPremium() {
+    public boolean getEsPremium() {
         return esPremium;
     }
 
@@ -41,12 +41,7 @@ public class Resena {
         this.fechaResena = fechaResena;
     }
 
-    public boolean esPremium(){
-        return this.esPremium;
-
-    }
-
-    public boolean esDePeriodo(LocalDate fechaDesde, LocalDate fechaHasta){
+     public boolean esDePeriodo(LocalDate fechaDesde, LocalDate fechaHasta){
         return (this.fechaResena.isAfter(fechaDesde) && this.fechaResena.isBefore(fechaHasta));
     }
 }

@@ -100,19 +100,6 @@ public class Vino {
     public Vino() {
     }
 
-    public Vino(Integer anada, String imagenEtiqueta, String nombre, String notaDeCadaBodega, double precio,
-                List<Varietal> varietal, Bodega bodega, List<Resena> resenas) {
-        this.anada = anada;
-        this.imagenEtiqueta = imagenEtiqueta;
-        this.nombre = nombre;
-        this.notaDeCadaBodega = notaDeCadaBodega;
-        this.precio = precio;
-        this.varietal = varietal;
-        this.bodega = bodega;
-        this.resenas = resenas;
-    }
-
-
     //OTROS METODOS
 
     public boolean tieneResena(LocalDate fechaDesde, LocalDate fechaHasta){
@@ -122,7 +109,7 @@ public class Vino {
         AtomicBoolean tieneResena = new AtomicBoolean(false);
 
         resenas.stream().forEach(resena ->{
-            if(resena.esDePeriodo(fechaDesde,fechaHasta) && resena.esPremium()){
+            if(resena.esDePeriodo(fechaDesde,fechaHasta) && resena.getEsPremium()){
                 tieneResena.set(true);
                 resenasPremiumPeriodo.add(resena);
             }

@@ -154,7 +154,7 @@ public class GestorRankingVinos {
             listaTopDiezVinos[posicionGeneral-1][0]= String.valueOf(posicionGeneral);
             listaTopDiezVinos[posicionGeneral-1][1]=vino.getNombre();
             listaTopDiezVinos[posicionGeneral-1][2]=String.valueOf(vino.getPrecio());
-            listaTopDiezVinos[posicionGeneral-1][3]=String.valueOf(vino.getPromedioCalificacion()); //ESTO ESTA COMO UN LOOP EN E GESTOR
+            listaTopDiezVinos[posicionGeneral-1][3]=String.valueOf(vino.getPromedioCalificacion());
             listaTopDiezVinos[posicionGeneral-1][4]=vino.obtenerNombreBodega();
             listaTopDiezVinos[posicionGeneral-1][5]=vino.obtenerDescripcionVarietal();
             listaTopDiezVinos[posicionGeneral-1][6]=vino.obtenerNombreRegionVitinicola();
@@ -164,9 +164,6 @@ public class GestorRankingVinos {
 
     }
 
-    public Double obtenerCalificacionSommelier() { // ESTE METODO ESTA MAL, ESE DATO LO TIENE GUARDADO EL VINO. ES UN GET.
-        return null;
-    }
     public int obtenerCalificacionGeneral(int posicionGeneral) {
         return posicionGeneral + 1;
     }

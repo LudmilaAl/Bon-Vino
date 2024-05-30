@@ -4,7 +4,7 @@
     "provincias": [
       {
         "nombre": "Mendoza",
-        "regionVitivinicolas": [
+        "regionesVitivinicolas": [
           {
             "nombre": "Alto Luján de Cuyo",
             "descripcion": "Subregión ubicada en el Valle de Uco, Mendoza, conocida por sus grandes vinos tintos de altura."
@@ -21,7 +21,7 @@
       },
       {
         "nombre": "Salta",
-        "regionVitivinicolas": [
+        "regionesVitivinicolas": [
           {
             "nombre": "Valles Calchaquíes",
             "descripcion": "Una región vitivinícola única, ubicada en el norte de Argentina, conocida por sus vinos de gran carácter y expresión."
@@ -35,7 +35,7 @@
     "provincias": [
       {
         "nombre": "Bordeos",
-        "regionVitivinicolas": [
+        "regionesVitivinicolas": [
           {
             "nombre": "Burdeos",
             "descripcion": "Una de las regiones vitivinícolas más prestigiosas del mundo, conocida por sus vinos tintos de Cabernet Sauvignon y Merlot."
@@ -44,7 +44,7 @@
       },
       {
         "nombre": "Borgoña",
-        "regionVitivinicolas": [
+        "regionesVitivinicolas": [
           {
             "nombre": "Borgoña",
             "descripcion": "Una de las regiones vitivinícolas más prestigiosas del mundo, conocida por sus Pinot Noir complejos y elegantes."
@@ -58,7 +58,7 @@
     "provincias": [
       {
         "nombre": "Barossa Valley",
-        "regionVitivinicolas": [
+        "regionesVitivinicolas": [
           {
             "nombre": "Barossa Valley",
             "descripcion": "Una de las regiones vitivinícolas más importantes de Australia, conocida por sus vinos tintos intensos y complejos."
@@ -72,7 +72,7 @@
     "provincias": [
       {
         "nombre": "California",
-        "regionVitivinicolas": [
+        "regionesVitivinicolas": [
           {
             "nombre": "Napa Valley",
             "descripcion": "La región vitivinícola más famosa de California, conocida por sus vinos tintos de alta gama."
@@ -86,7 +86,7 @@
     "provincias": [
       {
         "nombre": "Toscana",
-        "regionVitivinicolas": [
+        "regionesVitivinicolas": [
           {
             "nombre": "Toscana",
             "descripcion": "Una de las regiones vitivinícolas más antiguas e importantes de Italia, conocida por sus vinos tintos de Sangiovese."
@@ -100,7 +100,7 @@
     "provincias": [
       {
         "nombre": "Castilla y León",
-        "regionVitivinicolas": [
+        "regionesVitivinicolas": [
           {
             "nombre": "Ribera del Duero",
             "descripcion": "Una región vitivinícola española conocida por sus vinos tintos Tempranillo intensos y complejos."
