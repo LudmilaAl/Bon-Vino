@@ -29,5 +29,55 @@
     <orderEntry type="library" name="log4j-core-2.23.1" level="project" />
     <orderEntry type="library" name="xmlbeans-5.1.1 (2)" level="project" />
     <orderEntry type="library" name="jxl" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../lib/jcalendar-1.4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../lib/jgoodies-common-1.2.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../lib/jgoodies-looks-2.4.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../lib/junit-4.6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../CSharpJExcel/CSharpJExcel/jexcelapi_2_6_12.zip!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$MODULE_DIR$/../CSharpJExcel/CSharpJExcel/jexcelapi_2_6_12.zip!/jexcelapi/docs" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/../CSharpJExcel/CSharpJExcel/jexcelapi_2_6_12.zip!/jexcelapi/build" />
+          <root url="jar://$MODULE_DIR$/../CSharpJExcel/CSharpJExcel/jexcelapi_2_6_12.zip!/jexcelapi/src" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>
